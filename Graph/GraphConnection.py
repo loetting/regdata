@@ -7,7 +7,6 @@ class GraphConnection:
 
     def insert(self, node):
         session = self.driver.session()
-
         try:
             query = node.create_statement["query"]
             params = node.create_statement["params"]
